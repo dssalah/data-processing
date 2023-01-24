@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Form Template</title>
+     <title>Data Processing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/data-processing.css">
  </head>
  <body>
      <header>
@@ -18,23 +19,54 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
-   <main class="wrapper">
+
+     <main class="wrapper">
+    <div id="output">
+
+    <form action="" method="get" class="main-form">
+     <h2 class="subheader">Buy a Widget!</h2>
+     <div id="widgets">
+         <div>
+             <b>Widget</b><br />
+             <p>Our Widgets are spring loaded and need no batteries!</p>
+             <p>At $3.99 they're a bargain!</p>
+             <p><label><input type="checkbox" name="Cart" value="Widget" /> Add to Cart</label></p>
+             <div class="pic"><img src="images/widget.png" /></div>
+         </div>
+         <div>
+             <b>Sprocket</b><br />
+             <p>Our Sprockets are well made and hold up to extreme pressure!</p>
+             <p>They only cost $5.99!</p>
+             <p><label><input type="checkbox" name="Cart" value="Sprocket" /> Add to Cart</label></p>
+             <div class="pic"><img src="images/sprocket.png" /></div>
+         </div>
+         <div>
+             <b>Thingy</b><br />
+             <p>Our Thingys have many uses, and people come up with new ones all the time!</p>
+             <p>Such a deal at $1.99!</p>
+             <p><label><input type="checkbox" name="Cart" value="Thingy" /> Add to Cart</label></p>
+             <div class="pic"><img src="images/thingy.png" /></div>
+         </div>
+     </div>
+   
  
     <h2 class="subheader">Place form code below:</h2>
-    <form action="" method="get" class="main-form">
+    
       <div>
         <label for="FirstName">First Name</label><br>
-         <input type="text" name="FirstName" id="FirstName" placeholder="First Name"required autofocus>
+         <input type="text" name="First_Name" id="FirstName" placeholder="First Name"required autofocus>
       <div>
         <div>
           <label for="LastName">Last Name</label><br>
-           <input type="text" name="LastName" id="LastName" placeholder="Last Name">
+           <input type="text" name="Last_Name" id="LastName" placeholder="Last Name">
         </div>
         <div>
           <label for="Email">Email</label><br>
            <input type="email" name="Email" id="Email" placeholder="Email" required>
         </div>
+        
+      
+      
       </div>
       <div>
         <label for="Address">Address</label><br>
@@ -47,6 +79,10 @@
           <option value="CA">California</option>
           <option value="WA">Washington</option>
         </select>
+      </div>
+      <div>
+        <label for="PostalCode">PostalCode</label><br>
+        <input type="text" name="Postal_Code" id="PostalCode" placeholder="Postal Code" required>
       </div>
       <div>
         <fieldset>
@@ -64,13 +100,14 @@
           </fieldset>
         </div>
         <div>
-          <label for="Comments">Comments</label><br>
-          <textarea></textarea>
+          <label for="Notes">Notes</label><br>
+          <textarea name="Notes" id="Notes" cols="34" rows="4"></textarea>
         </div>
       </div>
         <input type="submit" value="Submit it!">
       </div>
     </form>
+    </div>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
           DURRAN SALAH, All Rights Reserved ~ 
@@ -79,6 +116,7 @@
      </p>
     </footer>
   </main>
-  <script src="js/main.js"></script>   
+  <script src="js/main.js"></script>  
+  <script src="js/data-proccessing.js"></script> 
  </body>
 </html>
