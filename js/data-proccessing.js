@@ -1,15 +1,5 @@
-//alert ("Hello from data processing!");
-/* 
-Cart Contents
-
-Widget: $3.99
-Sprocket: $5.99
-Thingy: $1.99
-
-Total: $11.97
-*/
-
 const queryString = window.location.search;
+
 if(queryString.length > 0){
 const urlParams = new URLSearchParams(queryString);
 
@@ -24,17 +14,17 @@ const urlParams = new URLSearchParams(queryString);
         //alert("Cart" + value);
         switch(value){
             case "Widget":
-                myCart += "Widget: $3.99<br>";
-                myTotal += 3.99;
+                myCart += "Widget: $3.99<br>"
+                myTotal += 3.99
                 break;
              case "Sprocket":
-                myCart += "Widget: $5.99<br>";
+                myCart += "Widget: $5.99<br>"
                 myTotal += 5.99;
              break;
 
              case "Thingy":
-                myCart += "Widget: $1.99<br>";
-                myTotal += 1.99;
+                myCart += "Widget: $1.99<br>"
+                myTotal += 1.99
              break;
         }
 

@@ -1,7 +1,10 @@
 //https://tinyurl.com/dynamic-html-checker
+
 const queryString = window.location.search;
+
 if(queryString.length > 0){
-const urlParams = new URLSearchParams(queryString);
+
+    const urlParams = new URLSearchParams(queryString);
 
     let myData = "";
     let myCart ="";
@@ -30,8 +33,9 @@ const urlParams = new URLSearchParams(queryString);
 
         }else{//process shipping
             key = key.split("_").join(" ");
-            //console.log(key, value);
+            console.log(key, value);
             myData += `<p>${key}: ${value}</p>`;
+            
     }
 });
 
