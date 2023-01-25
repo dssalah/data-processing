@@ -22,9 +22,10 @@
 
      <main class="wrapper">
     <div id="output">
-
     <form method="get" action="" class="main-form">
-     <h2 class="subheader">Buy a Widget!</h2>
+    <h2 class="subheader">Buy a Widget!</h2>
+    
+     
      <div id="widgets">
          <div>
              <b>Widget</b><br />
@@ -50,7 +51,7 @@
      </div>
    
  
-    <h2 class="subheader">Place form code below:</h2>
+    <h2 class="subheader">Shipping Info:</h2>
     
       <div>
         <label for="FirstName">First Name</label><br>
@@ -59,6 +60,10 @@
         <div>
           <label for="LastName">Last Name</label><br>
            <input type="text" name="Last_Name" id="LastName" placeholder="Last Name">
+        </div>
+        <div>
+          <label for="Phone">Phone</label> <em>(xxx-xxx-xxxx)</em><br>
+           <input type="tel" name="phone" id="phone" pattern="[0-9]{0-3}-[0-9]{0-3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
         </div>
         <div>
           <label for="Email">Email</label><br>
